@@ -14,12 +14,18 @@ import {
 
 import { useAppSelector, useAppDispatch } from '../hooks/hooks';
 import { selectPizza } from '../redux/pizza/selectors';
-import { selectCategoryId, selectCurrentPage, selectFilter, selectSort } from '../redux/filter/selectors';
+import {
+  selectCategoryId,
+  selectCurrentPage,
+  selectFilter,
+  selectSort,
+} from '../redux/filter/selectors';
 import { fetchPizzas } from '../redux/pizza/asyncActions';
-import { setCategoryId, setCurrentPage, setFilters } from '../redux/filter/slice';
-
-
-
+import {
+  setCategoryId,
+  setCurrentPage,
+  setFilters,
+} from '../redux/filter/slice';
 
 export const Home: React.FC = () => {
   const categoryId = useAppSelector(selectCategoryId);

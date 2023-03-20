@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { CartItem } from '../../redux/cart/types';
 import { addProduct } from '../../redux/cart/slice';
 import { selectCartItemById } from '../../redux/cart/selectors';
 import { Link } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '../../hooks/hooks';
+import { CartItem } from '../../redux/cart/types';
 
 const typesPizza = ['тонкое', 'традиционное'];
 const sizeType = ['26', '30', '40'];
